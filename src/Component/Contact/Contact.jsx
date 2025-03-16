@@ -14,7 +14,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "8344897c-48f0-4266-9271-087b6ed6007f");
+    formData.append("access_key",  "7552c6b6-8be4-47a1-abbb-ea1aa98f358c");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -24,7 +24,7 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Email successfully sent");
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -40,9 +40,9 @@ const Contact = () => {
             <h3>Send us a message <img src={msg_icon} alt=''/></h3>
             <p>Feel free to reach out through contact form or find our contact information below. Your feedback, Questions and suggestions are importent to us as we strive to provide exceptional service to our university community.</p>
             <ul>
-                <li><img src={mail_icon} alt=''/>Contact@puja.dev</li>
-                <li><img src={phone_icon} alt=''/>+1 321-645-7890</li>
-                <li><img src={location_icon} alt=''/>88 Amberpet pet, Hydrebad <br/> MA 02139, India</li>
+                <li><img src={mail_icon} alt=''/>Contact@praveena.dev</li>
+                <li><img src={phone_icon} alt=''/>+91 9834567231</li>
+                <li><img src={location_icon} alt=''/> S.R.nagar, Hydrebad <br/> 510123, India</li>
             </ul>
       </div>
         <div className="contact-col"></div>
